@@ -4,7 +4,7 @@ import { useState } from 'react'
 export default function SignUp() {
   const [show, setShow] = useState(false);
 
-  const handleShowPassword = () => setShow(!show);
+  const handleShow = () => setShow(!show);
 
   return (
     <VStack spacing={'.5rem'}>
@@ -29,7 +29,7 @@ export default function SignUp() {
             onChange={() => { }} />
 
           <InputRightElement width={'3.5rem'}>
-            <Button h={'100%'} bg={'transparent'} size={'sm'} px={'10px'} onClick={handleShowPassword}>
+            <Button h={'100%'} bg={'transparent'} size={'sm'} px={'10px'} onClick={handleShow}>
               {show ? 'Hide' : 'Show'}
             </Button>
           </InputRightElement>
@@ -45,14 +45,12 @@ export default function SignUp() {
             onChange={() => { }} />
 
           <InputRightElement width={'3.5rem'}>
-            <Button h={'100%'} bg={'transparent'} size={'sm'} px={'10px'} onClick={handleShowPassword}>
+            <Button h={'100%'} bg={'transparent'} size={'sm'} px={'10px'} onClick={handleShow}>
               {show ? 'Hide' : 'Show'}
             </Button>
           </InputRightElement>
         </InputGroup>
       </FormControl>
-
-      
 
       <Button width={'100%'} mt={'1rem'} colorScheme='blue' variant='solid'>
         Sign In
