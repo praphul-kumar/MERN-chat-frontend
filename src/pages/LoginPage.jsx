@@ -15,8 +15,7 @@ export default function LoginPage() {
           bg={'#f4f4f4'}
           w={'100%'}
           m="0 0 16px"
-          borderRadius='lg'
-        >
+          borderRadius='lg' >
           <Text fontSize='2xl' align={'center'}>MERN Real Chat</Text>
         </Box>
         <Box
